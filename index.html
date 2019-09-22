@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="app.js"></script> -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#">Dishes</a>
+  </nav>
+  <!--/.Navbar -->
+  <div class="container main">
+    <div class="row ">
+      <div class="col-12 boxl bg-danger text-center  d-flex justify-content-center flex-column" id="titulo">
+        <h3> CRUD nodeJS / express / mongo </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 boxl text-center  d-flex justify-content-center flex-column" id="formAdd">
+        <div class="container">
+          <form action="" method="post">
+            <div class="container">
+              <h3>new dish</h3>
+            </div>
+            <hr>
+            <div class="form-group">
+              <input id="dishName" class="form-control" type="text" placeholder="dishName ..." required>
+            </div>
+            <div class="form-group">
+              <select id="dishType" class="form-control" name="type">
+                <option selected="true" disabled="disabled">pick a type</option>
+                <option value="starter">starter</option>
+                <option value="main">main</option>
+                <option value="dessert">dessert</option>
+                <option value="drink">drink</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="dishDescription" class="form-control" rows="3" placeholder="description ..."></textarea>
+            </div>
+            <div class="form-group">
+              <input class="btn btn-primary form-control" type="submit" value="add Dish">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 text-center flex-column" id="listBox">
+        <div class="container">
+          <h3>dish list</h3>
+        </div>
+        <hr>
+        <div class="card  mt-2">
+          <div class="row ">
+            <div class="col-9 ">
+              <div class="container">
+                <div class="row">
+                  <div class="col-8">
+                    <h5>dishName</h5>
+                  </div>
+                  <div class="col-4">
+                    <h6>type</h6>
+                  </div>
+                </div>
+                <hr>
+                <div class="row ">
+                  <div class="col-12">short description about this dish</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center flex-column">
+              <div class="container py-1 ">
+                <a href="#" class="btn btn-warning w-100 ">edit</a>
+              </div>
+              <div class="container py-1">
+                <a href="#" class="btn btn-danger w-100">del</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- <footer>
+        <div class="row">
+             <div class="col-12 boxl bg-dark text-center text-success" id="footer">footer</div>           
+        </div>
+    </footer> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    $(document).ready(function () {
+      console.log("ready!");
+    });
+  </script>
+</body>
+
+</html>
